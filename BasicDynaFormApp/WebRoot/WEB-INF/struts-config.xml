@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="studentForm" type="org.apache.struts.action.DynaActionForm">
+      <form-property name="studentNo" type="java.lang.String" />
+      <form-property name="studentName" type="java.lang.String" />
+    </form-bean>
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      input="/student.jsp"
+      name="studentForm"
+      path="/student"
+      type="com.vcs.struts.action.StudentAction">
+      <forward name="success" path="/success.jsp" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.vcs.struts.ApplicationResources" />
+</struts-config>
+

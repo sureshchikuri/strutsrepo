@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/student.do" location="50,50" dimension="230,96" />
+  <StrutsActivity path="/success.jsp" location="350,50" dimension="93,51" />
+  <StrutsActivity path="/student/student.jsp" location="650,50" dimension="138,51" />
+  <StrutsActivity path="/failure.do" location="950,50" dimension="224,96" />
+  <StrutsActivity path="/failure.jsp" location="50,250" dimension="86,51" />
+  <StrutsActivity path="/failureAction.do" location="350,250" dimension="259,96" />
+  <StrutsTransition id="/failure.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1062,146" />
+      <AbsolutePoint location="1062,191" />
+      <AbsolutePoint location="93,191" />
+      <AbsolutePoint location="93,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/failureAction.do,failure,/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,275" />
+      <AbsolutePoint location="136,275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="280,75" />
+      <AbsolutePoint location="350,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student/student.jsp,null,/student.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="719,101" />
+      <AbsolutePoint location="719,116" />
+      <AbsolutePoint location="280,116" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

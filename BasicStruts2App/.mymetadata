@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BasicStruts2App"
+  id="myeclipse.1443336016663"
+  context-root="/BasicStruts2App"
+  j2ee-spec="5.0"
+  archive="BasicStruts2App.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

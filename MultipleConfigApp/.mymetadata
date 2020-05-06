@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MultipleConfigApp"
+  id="myeclipse.1388710500697"
+  context-root="/MultipleConfigApp"
+  j2ee-spec="1.4"
+  archive="MultipleConfigApp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

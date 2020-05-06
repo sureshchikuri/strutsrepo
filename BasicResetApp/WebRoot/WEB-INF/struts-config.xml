@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="studentForm" type="com.vcs.struts.form.StudentForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="studentForm"
+      input="/form/student.jsp"
+      name="studentForm"
+      path="/student"
+      scope="request"
+      type="com.vcs.struts.action.StudentAction">
+      <set-property property="cancellable" value="true" />
+      <forward name="student" path="/student.jsp" />
+    </action>
+
+  </action-mappings>
+
+  <message-resources parameter="com.vcs.struts.ApplicationResources" />
+</struts-config>
+

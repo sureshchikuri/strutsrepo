@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BasicDynaVAFormApp"
+  id="myeclipse.1390844382526"
+  context-root="/BasicDynaVAFormApp"
+  j2ee-spec="1.4"
+  archive="BasicDynaVAFormApp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

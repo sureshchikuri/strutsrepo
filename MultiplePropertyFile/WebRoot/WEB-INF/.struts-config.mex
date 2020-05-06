@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/success.jsp" location="350,50" dimension="93,51" />
+  <StrutsActivity path="/srudent.jsp" location="650,50" dimension="93,51" />
+  <StrutsActivity path="/student.do" />
+  <StrutsActivity path="/student.jsp" />
+  <StrutsTransition id="/srudent.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="280,75" />
+      <AbsolutePoint location="350,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/srudent.jsp,null,/srudent.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="696,101" />
+      <AbsolutePoint location="696,116" />
+      <AbsolutePoint location="280,116" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="396,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.jsp,null,/student.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

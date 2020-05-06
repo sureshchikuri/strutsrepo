@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BasicTilesApp"
+  id="myeclipse.1388995372563"
+  context-root="/BasicTilesApp"
+  j2ee-spec="5.0"
+  archive="BasicTilesApp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
