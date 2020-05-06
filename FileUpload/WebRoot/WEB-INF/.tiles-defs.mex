@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="TilesHome" location="234,166" dimension="87,51" />
+  <StrutsActivity path="file.fileupload" location="43,513" dimension="102,51" />
+  <StrutsActivity path="index.jsp" location="56,0" dimension="76,51" />
+  <StrutsTransition id="/preFileUpload.do,null,file.fileupload,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="94,413" />
+      <AbsolutePoint location="94,513" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="index.jsp,null,/fileUpload.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="94,51" />
+      <AbsolutePoint location="94,151" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/fileUpload.do,success,/preFileUpload.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="94,247" />
+      <AbsolutePoint location="94,347" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="277,66" />
+      <AbsolutePoint location="277,166" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

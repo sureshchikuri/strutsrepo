@@ -1,0 +1,19 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "http://struts.apache.org/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+<definition name="BaseLayout" page="/layout.jsp">
+<put name="header" value="/header.jsp"></put>
+<put name="body" value=""></put>
+<put name="menu" value="/menu.jsp"></put>
+<put name="footer" value="/footer.jsp"></put>
+</definition>
+
+<definition name="TilesHome" extends="BaseLayout">
+<put name="body" value="/home.jsp"/>
+</definition>
+
+<definition name="TilesStudent" extends="BaseLayout">
+<put name="body" value="/student.jsp"/>
+</definition>
+
+</tiles-definitions>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="studentForm" type="com.vcs.struts.form.StudentForm" />
+
+  </form-beans>
+  
+  
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="studentForm"
+      input="/student.jsp"
+      name="studentForm"
+      path="/student"
+      scope="request"
+      type="com.vcs.struts.action.StudentAction">
+      <set-property property="cancellable" value="true" />
+      
+      <forward name="success" path="/success.jsp" />
+    </action>
+    <action path="/home" forward="TilesHome"/>
+    <action path="/student" forward="TilesStudent"/>
+
+  </action-mappings>
+
+  <message-resources parameter="com.vcs.struts.ApplicationResources" />
+  <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+    <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml" />
+  </plug-in>
+   <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+  </plug-in>
+</struts-config>
+

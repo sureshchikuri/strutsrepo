@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/success.jsp" location="350,50" dimension="93,51" />
+  <StrutsActivity path="/student.jsp" location="650,50" dimension="93,51" />
+  <StrutsActivity path="TilesHome" location="950,50" dimension="87,51" />
+  <StrutsActivity path="/student.do" location="50,50" dimension="230,96" />
+  <StrutsActivity path="/home.do" location="50,250" dimension="76,66" />
+  <StrutsActivity path="TilesStudent" location="350,250" dimension="95,51" />
+  <StrutsTransition id="/student.do,/student,TilesStudent,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="135,146" />
+      <AbsolutePoint location="135,275" />
+      <AbsolutePoint location="350,275" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,null,TilesStudent,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,146" />
+      <AbsolutePoint location="165,221" />
+      <AbsolutePoint location="397,221" />
+      <AbsolutePoint location="397,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,success,/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="280,75" />
+      <AbsolutePoint location="350,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="165,50" />
+      <AbsolutePoint location="165,-25" />
+      <AbsolutePoint location="993,-25" />
+      <AbsolutePoint location="993,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="88,250" />
+      <AbsolutePoint location="88,191" />
+      <AbsolutePoint location="993,191" />
+      <AbsolutePoint location="993,101" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/student.jsp,null,/student.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="696,101" />
+      <AbsolutePoint location="696,116" />
+      <AbsolutePoint location="280,116" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

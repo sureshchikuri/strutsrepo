@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="fileUploadForm" type="edu.form.FileUploadForm"></form-bean>
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+
+		<action path="/home" forward="TilesHome"></action>
+		<action path="/preFileUpload" forward="file.fileupload" scope="request"></action>
+
+		<action path="/fileUpload" input="index.jsp" name="fileUploadForm"
+			type="edu.action.FileUploadAction" parameter="method" scope="request">
+			<forward name="success" path="/preFileUpload.do"></forward>
+		</action>
+		<action path="/fileDownload" name="fileUploadForm" type="edu.action.ExportInvalidRecordsAction" scope="request"></action>
+		<action path="/sampleFileFormate" type="edu.action.LoadSampleFileFormateAction" name="fileUploadForm" scope="request"></action>
+	</action-mappings>
+	<message-resources parameter="com.vcs.struts.ApplicationResources" />
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+	<set-property value="\WEB-INF\tiles-defs.xml" property="definitions-config"/>
+	</plug-in>
+</struts-config>
+

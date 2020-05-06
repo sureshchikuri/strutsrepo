@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.cross.easystruts.eclipse.STRUTS12_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/log4j.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/commons.collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/commons-dbutils-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="D:/SoftwaresHelp/jars/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

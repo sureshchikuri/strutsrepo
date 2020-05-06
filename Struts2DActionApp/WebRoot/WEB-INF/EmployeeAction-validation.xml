@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE digester-rules PUBLIC "-//Jakarta Apache //DTD digester-rules XML V1.0//EN" 
+	"http://jakarta.apache.org/commons/digester/dtds/digester-rules.dtd">
+
+<digester-rules>
+	<validators>
+		<field name="empName">
+			<field-validator type="required">
+				<message>EmployeeName is Required</message>
+			</field-validator>
+		</field>
+
+	</validators>
+</digester-rules>

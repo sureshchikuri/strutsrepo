@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/home.do" location="50,250" dimension="76,66" />
+  <StrutsActivity path="/preFileUpload.do" location="350,250" dimension="118,66" />
+  <StrutsActivity path="/fileUpload.do" location="50,50" dimension="189,96" />
+  <StrutsActivity path="/fileDownload.do" location="50,450" dimension="243,96" />
+  <StrutsActivity path="/sampleFileFormate.do" location="350,450" dimension="260,96" />
+  <StrutsActivity path="TilesHome" location="650,250" dimension="87,51" />
+  <StrutsActivity path="file.fileupload" location="950,250" dimension="102,51" />
+  <StrutsActivity path="index.jsp" location="350,50" dimension="76,51" />
+  <StrutsActivity path="/success.jsp" location="950,50" dimension="93,51" />
+  <StrutsActivity path=".success.jsp" location="650,50" dimension="91,51" />
+  <StrutsTransition id="/preFileUpload.do,null,file.fileupload,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="409,250" />
+      <AbsolutePoint location="409,221" />
+      <AbsolutePoint location="1001,221" />
+      <AbsolutePoint location="1001,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="index.jsp,null,/fileUpload.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,75" />
+      <AbsolutePoint location="239,75" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/fileUpload.do,success,/preFileUpload.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="144,146" />
+      <AbsolutePoint location="144,283" />
+      <AbsolutePoint location="350,283" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/home.do,null,TilesHome,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="88,250" />
+      <AbsolutePoint location="88,191" />
+      <AbsolutePoint location="693,191" />
+      <AbsolutePoint location="693,250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+
